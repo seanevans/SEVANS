@@ -1,3 +1,7 @@
+===
+Rails 3 way tutorial
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
