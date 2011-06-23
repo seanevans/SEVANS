@@ -329,8 +329,14 @@ describe UsersController do
         delete :destroy, :id => @user 
         response.should redirect_to(users_path) 
       end
-       
-    end 
+      
+      it "should not destroy itself" do
+        @user = test_sign_in(Factory(:user, :email => 'admin@test.ca', :admin => true))
+        delete :destroy, :id => @user
+        flash[:notice].should == "Admin's cannot self destruct"
+      end
+      
+    end #END as an admin user 
     
   end #END of DELETE 'destroy'
   

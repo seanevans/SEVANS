@@ -47,9 +47,16 @@ class UsersController < ApplicationController
   end 
   
   def destroy 
-    User.find(params[:id]).destroy 
-    flash[:success] = "User destroyed."
-    redirect_to users_path 
+    @user = User.find(params[:id])
+    if current_user?(@user) && current_user.admin?
+        flash[:notice] = "Admin's cannot self destruct"
+        redirect_to users_path
+    else
+      User.find(params[:id]).destroy 
+      flash[:success] = "User destroyed."
+      redirect_to users_path 
+    end
+    
   end
   
   private 
