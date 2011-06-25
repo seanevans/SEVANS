@@ -5,8 +5,7 @@ source 'http://rubygems.org'
 group :development do 
   gem 'rspec-rails', '2.0.1' 
   gem 'annotate-models', '1.0.4'
-  gem 'annotate'
-  gem 'faker', '0.3.1', :require => false
+  gem 'annotate'  
 end 
 
 group :test do 
@@ -15,6 +14,7 @@ group :test do
   gem 'factory_girl_rails', '1.0' 
 end
 
+gem 'faker', '0.3.1'
 gem 'rails', '3.0.5'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'will_paginate', '3.0.pre2'
