@@ -58,7 +58,7 @@ a.signup_button {
 footer { 
   text-align: center; 
   margin-top: 10px; 
-  width: 710px; 
+  width: 900px; 
   margin-left: auto; 
   margin-right: auto; 
 } 
@@ -69,11 +69,11 @@ footer nav {
 
 /* Default */
 .container { 
-  width: 710px; 
+  width: 900px; 
 }
  
 body { 
-  background: #cff; 
+  background: black; 
 } 
 
 header { 
@@ -118,12 +118,12 @@ table.profile {
 } 
 
 td.main { 
-  width: 70%; 
+  width: 80%; 
   padding: 1em; 
 }
 
 td.sidebar { 
-  width: 30%; 
+  width: 20%; 
   padding: 1em; 
   vertical-align: top; 
   background: #ffc; 
