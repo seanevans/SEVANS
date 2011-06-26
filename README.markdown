@@ -4,19 +4,34 @@ This project was written with help from:
 * Ruby on Rails Tutorial Book: http://www.railstutorial.org/
 
 A great guide to help get me started on Ruby on Rails!!!
+I wanted to learn Ruby on Rails and build myself a website.
+From here I would like to add more content about myself, 
+and some cool add on applications. I posted up on Github
+for others like me who want to learn.
 
 ==========================================================
--What is this for?
--Who wrote this?
-==========================================================
+OVERVIEW
+-Built with TDD (rspec)
+
+FEATURES
+-MicroPosts (Twitteresque)
+-Custom Authentication and Sessions
+-Gravatar addition for signed up users
+-BluePrint custom CSS
+-Faker for autogeneration of test database
 
 ==========================================================
-WHAT IS THIS FOR?
+TDD
 
-I wanted to learn a new language and Ruby is it. As a new
-developer I badly needed a personal website, and so it was
-a no brainer to create this site with RoR.
-==========================================================
+rspec uses spec files to hold your tests.
+
+EXAMPLE: users_spec.rb
+
+You can find them in the "/spec" folder. 
+The bulk of the tests are for the Models and Controllers, 
+but there are some integration tests which make sure that 
+your pages and actions work as expected.
+These are found in the "/spec/requests" folder.
 
 ==========================================================
 Who wrote this?
@@ -24,5 +39,8 @@ Who wrote this?
 As listed at the top I followed along with the rails tutorial
 book which was really helpful. Most of the application is
 borrowed from the book and I am now starting t write my 
-own application add-ons.
+own application add-ons. 
+
 ==========================================================
+
+More to come ...
