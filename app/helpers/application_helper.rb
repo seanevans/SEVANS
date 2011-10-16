@@ -10,6 +10,7 @@ module ApplicationHelper
   end
   
   def logo 
-    image_tag("SEVANS_logo.png", :alt => "SEVANS", :class => "round") 
+    image_tag("SEVANS_logo.JPG", :alt => "SEVANS", :class => "round",
+    :size => "400x100") 
   end
 end
